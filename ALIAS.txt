@@ -1,0 +1,331 @@
+ALIAS
+
+alias a3='sudo lsof -i :3000'
+
+alias ac='sudo cat ~/.bash_aliases'
+alias acR='sudo rm ~/.bash_aliases'
+alias an='sudo nano ~/.bash_aliases'
+
+alias aw='cd /var/www/'
+
+alias b='bash'
+
+alias c='clear'
+alias cc='cd ..'
+alias ccc='cd ~'
+
+#.................SCP........................................................
+
+alias cpw3=' scp -r /var/www/ root@192.168.1.123:/var/  '
+alias cpna3=' scp -r /etc/nginx/sites-available/ root@192.168.1.123:/etc/nginx/  '
+alias cpne3=' scp -r /etc/nginx/sites-enabled/ root@192.168.1.123:/etc/nginx/  '
+
+
+alias cpw2=' scp -r /var/www/ root@192.168.1.122:/var/  '
+alias cpna2=' scp -r /etc/nginx/sites-available/ root@192.168.1.122:/etc/nginx/  '
+alias cpne2=' scp -r /etc/nginx/sites-enabled/ root@192.168.1.122:/etc/nginx/  '
+
+alias cpw1=' scp -r /var/www/ root@192.168.1.121:/var/  '
+alias cpna1=' scp -r /etc/nginx/sites-available/ root@192.168.1.121:/etc/nginx/  '
+alias cpne1=' scp -r /etc/nginx/sites-enabled/ root@192.168.1.121:/etc/nginx/  '
+
+#..........................SCP.......END.....................
+
+
+
+#...........DOCKER.........................................
+
+alias dd=' docker compose '
+
+alias dk='docker '
+
+alias dp='docker ps -a'
+
+alias dcl='docker container ls -a '
+alias dil='docker image list '
+alias dnl='docker network list '
+
+alias ds=' docker start  '
+alias dss=' docker stop  '
+
+alias de='  docker exec -it  '
+
+alias dnt='docker network   '
+alias dntc='docker network create  '
+alias dntcc='docker network connect  '
+alias dntd='docker network disconnect  '
+
+
+alias dr='docker run -d '
+alias drc='docker container run -d '
+
+alias dS='docker stop '
+alias dR='docker rm  '
+alias dRR=' sudo aa-remove-unknown  '
+alias dRI='docker rmi  '
+alias dPI=' docker image prune --all  '
+
+
+alias dI='sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y'
+
+alias dU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
+sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin'
+
+#.......DOCKER...........END...................................
+
+
+alias ip='hostname -I'
+alias ipp='curl ifconfig.me'
+
+alias gi='git init'
+alias ga='git add .'
+alias gc='git commit -m "Commit message"'
+alias gp='git push origin master'
+alias gs='git status'
+alias gl='git log'
+
+#.................NGINX.....................................................
+
+
+alias na='cd /etc/nginx/sites-available '
+alias ne='cd /etc/nginx/sites-enabled '
+alias nee='cd /etc/nginx/ '
+
+
+#......../configure --help
+
+alias nxps='  ps aux | grep nginx  '
+
+alias nxcf='  ./configure '
+
+
+
+
+alias nxiz=' apt  install libpcre3  libpcre3-dev zlib1g  zlib1g-dev libssl-dev  '
+
+alias nxi=' apt install nginx -y  && se nginx    && sss nginx '
+
+alias nxii=' ./configure  --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log  --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid  --with-http_ssl_module   '
+
+alias nxie=' apt install build-essential '
+
+alias nxm=' make '
+alias nxmi=' make install '
+
+alias nxict=' sudo apt install certbot python3-certbot-nginx  '
+
+alias nxt=' nginx -t '
+
+alias nxnc=' nano /etc/nginx/nginx.conf '
+alias nxcc=' cat /etc/nginx/nginx.conf '
+
+#...X..
+
+alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remove nginx nginx-common nginx-core -y && apt autoremove -y'
+
+
+#.........NGINX....END............................
+
+
+
+# ........K3S...........................................
+
+alias kkI=' curl -sfL https://get.k3s.io | sh -   '
+alias kkU=' /usr/local/bin/k3s-uninstall.sh   '
+
+alias kknsw=' nano /etc/fstab        '
+#/swap.img
+alias kksw=' swapoff -a  '
+alias kkf=' free -m '
+
+alias kkl=' ls -lh /usr/local/bin/k3s  '
+alias kkc=' cat  /etc/rancher/k3s/k3s.yaml  '
+
+alias kkgda=' kubectl get deployment   --all-namespaces   '
+
+alias kkgpa='  kubectl get pods -o wide  --all-namespaces '
+alias kkgpk=' kubectl get pods -n kube-system   '
+alias kkgpn=' kubectl get pods -n   '
+
+
+
+alias kkgsk=' kubectl get svc kube-dns  -n kube-system   '
+alias kkgsa=' kubectl  get svc --all-namespaces   '
+alias kkgsn=' kubectl  get svc -n  '
+
+alias kka='  kubectl apply -f  '
+
+
+# ........K3S...END................................
+
+
+# ......NODE......a=food .........................
+
+
+alias neh='echo $a'
+
+alias ncb='cp /etc/nginx/sites-available/B  /etc/nginx/sites-available/$a.s111 '
+
+alias ncbb='cp /etc/nginx/sites-available/BB  /etc/nginx/sites-available/$a.s111 '
+
+alias nn='nano /etc/nginx/sites-available/$a.s111'
+alias nc='cat  /etc/nginx/sites-available/$a.s111'
+alias nl='ln -s /etc/nginx/sites-available/$a.s111  /etc/nginx/sites-enabled'
+
+
+alias nmd=' mkdir /var/www/$a.s111 && cd /var/www/$a.s111 '
+
+alias npc='pnpm create next-app  .'
+alias npk=' nano package.json  '
+alias npkc=' cat package.json  '
+
+
+alias npie=' pnpm create next-app --example $e $a.s111 .  '
+
+alias npi='pnpm  i'
+
+alias nppr=' npx prisma db push '
+
+alias npb='pnpm build'
+alias npr='pnpm run'
+
+alias nnpg=' nano /var/www/$a.s111/app/page.tsx   '
+alias ncpg=' cat /var/www/$a.s111/app/page.tsx   '
+
+
+alias np2=' pm2 start npm --name "$a" -- start '
+alias np2ss=' pm2 status  '
+alias np2sss=' pm2 startup    '
+alias np2ssss=' pm2 restart nextjs  '
+alias np2l=' pm2 logs   '
+alias np2f=' pm2 flush     '
+
+
+
+alias np2D=' pm2 delete "$a"  '
+alias np2K='pm2 kill "$a"  '
+alias np2S=' pm2 stop $a '
+
+
+alias nct='certbot --nginx -d $a.s111.com'
+
+
+alias pmk='pm2 kill '
+alias pms='pm2 status '
+
+alias nnR='rm   /etc/nginx/sites-enabled/$a && rm  /etc/nginx/sites-available/$a && rm -r /var/www/$a '
+
+
+#.......NODE........END......................................
+
+
+
+#..........NETWORK....................................
+
+alias nt='apt install -y net-tools && apt install openssh-client && apt install openssh-server  && apt install  xclip  && apt install ncdu   && apt install  iputils-ping  && apt install inetutils-traceroute
+  && apt install iproute2  && apt install curl && apt install telnet && apt install  dnsutils '
+
+alias ntt=' apt install   nano '
+
+
+#............NETWORK.....END...........................
+
+
+
+# ........POSGRES........................................
+
+
+alias pgish=' nano /usr/local/bin/installl-postgresql.sh '
+alias pgiash=' nano /usr/local/bin/installl-pgadmin.sh '
+
+alias pgx=' chmod +x /usr/local/bin/installl-postgresql.sh '
+alias pgxx=' chmod +x /usr/local/bin/installl-pgadmin.sh '
+
+alias pgsh=' /usr/local/bin/installl-postgresql.sh '
+alias pgash=' /usr/local/bin/installl-pgadmin.sh '
+
+
+alias pgicontrib=' apt install postgresql postgresql-contrib '
+
+alias pgss='  service postgresql status '
+alias pgsss='  systemctl start postgresql.service '
+alias pgssss='  systemctl stop postgresql.service '
+
+alias psql='  sudo -u postgres psql '
+
+
+#  \q   \l      \c my_db     \d  ...  *  \password  postgres  ...  111111  ...   q
+#  *   Server>Register>Server  ^General localhost  ??
+#  *  ^Connection localhost .85.190.241.170 5432 ufw  postgres-2x 111111
+
+
+#  ............................POSGRES-END................
+
+
+#.................SSH........................................
+
+
+alias sshcr='cat ~/.ssh/id_rsa.pub'
+alias sshce='cat ~/.ssh/id_ed25519.pub'
+
+alias sshca='cat ~/.ssh/authorized_keys'
+alias sshck='cat ~/.ssh/known_hosts'
+
+alias sshna='nano ~/.ssh/authorized_keys'
+
+alias sshl=' ls -al ~/.ssh '
+
+alias sshgr=' ssh-keygen -t rsa -b 2048 '
+
+alias sshge=' ssh-keygen -t ed25519 '
+
+
+
+alias s1='ssh root@192.168.1.121'
+alias s2='ssh root@192.168.1.122'
+alias s3='ssh root@192.168.1.123'
+
+
+#.......SSH.........END.................................
+
+
+
+alias sd='sudo systemctl disable'
+alias se='sudo systemctl enable '
+
+alias ss='sudo systemctl status '
+alias sss='sudo systemctl reload '
+alias ssss='sudo systemctl restart '
+alias sssss='sudo systemctl stop '
+
+alias sR='systemctl --type=service --state=running | less'
+
+
+
+alias tz='sudo timedatectl set-timezone Australia/Sydney'
+
+alias u='sudo apt update -y'
+alias uu='sudo apt update && sudo apt upgrade -y'
+
+alias ufe='ufw enable '
+alias ufs='ufw status'
+alias ufl='ufw app list'
+
+alias uf1='sudo ufw allow from 192.168.1.0/24'
+
+alias ufap='sudo ufw allow "Apache Full" '
+alias ufnx='sudo ufw allow "Nginx Full" '
+alias ufop='sudo ufw allow OpenSSH'
+
+alias ufDN='sudo ufw deny'
+alias ufDL='sudo ufw delete'
+
+alias ufDS='sudo ufw disable'
+alias ufRS='sudo ufw reset'
+
+
+alias z=' ssh z@192.168.1.121 '
+alias zz=' ssh zz@192.168.1.122 '
+alias zzz=' ssh zzz@192.168.1.123 '
+
+alias zZ=' ssh z@159.196.46.231  '
