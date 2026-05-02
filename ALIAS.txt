@@ -331,6 +331,11 @@ alias zzz=' ssh zzz@192.168.1.123 '
 alias zZ=' ssh z@159.196.46.231  '
 # man ssh-keygen 
 # cd .ssh 
-# ssh-keygen -t ed25519    
+# ssh -i .ssh/coolify root@65.109.174.213
 # coolify 
 # ls coolify  |  cat ...c
+# Not-default 20%-$ back-up 1/day
+# sshNot-default 20%-$ back-up 1/day
+# nano /etc/ssh/sshd_config  #PasswordAuthentication no #PermitEmptyPassword no/yes
+# syscetctl reload ssh.service
+# ssh -o PubkeyAuthentication=no  root@65.109.174.213
