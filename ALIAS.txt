@@ -329,3 +329,8 @@ alias zz=' ssh zz@192.168.1.122 '
 alias zzz=' ssh zzz@192.168.1.123 '
 
 alias zZ=' ssh z@159.196.46.231  '
+# man ssh-keygen 
+# cd .ssh 
+# ssh-keygen -t ed25519    
+# coolify 
+# ls coolify  |  cat ...c
