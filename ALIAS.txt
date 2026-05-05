@@ -1,7 +1,6 @@
-# ..................
+alias an='sudo nano ~/.bash_aliases'
 
 alias ac='sudo cat ~/.bash_aliases'
-alias an='sudo nano ~/.bash_aliases'
 
 alias aw='cd /var/www/'
 
