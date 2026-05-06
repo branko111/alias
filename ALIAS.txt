@@ -157,4 +157,26 @@ alias ufDL='sudo ufw delete'
 alias ufDS='sudo ufw disable'
 alias ufRS='sudo ufw reset'
 
+
+alias tsI='
+uu 
+&&
+
+apt install npm
+&&
+npm install -g pnpm 
+
+
+&&
+pnpm i @tanstack/react-start @tanstack/react-router vite
+&&
+pnpm i react react-dom
+&&
+pnpm i -D @vitejs/plugin-react
+
+
+&&
+pnpm i -D typescript @types/react @types/react-dom @types/node  vite-tsconfig-paths @vitejs/plugin-react
+ '
+
 #...............................................................
