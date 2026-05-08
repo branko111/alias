@@ -10,8 +10,9 @@ alias c='clear'
 alias cc='cd ..'
 alias ccc='cd ~'
 
+alias mf=' free -m '
 
-#......ALIAS  END............
+
 #.......DOCKER.........................................
 
 alias dd=' docker compose '
@@ -63,37 +64,36 @@ alias nxps='  ps aux | grep nginx  '
 alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remove nginx nginx-common nginx-core -y && apt autoremove -y'
 
 
-#.........NGINX....END....
+#.........NGINX....END...............................
+
 #.............K3S...........................................
+
+alias kka='  kubectl apply -f  '
+alias kkl=' ls -lh /usr/local/bin/k3s  '
+alias kky=' cat  /etc/rancher/k3s/k3s.yaml  '
+
+alias kkgd=' kubectl get deployment   --all-namespaces   '
+
+alias kkgp=' kubectl get pods -n   '
+alias kkgpp=' kubectl get pods -n kube-system   '
+alias kkgppp='  kubectl get pods -o wide  --all-namespaces '
+
+alias kkgs=' kubectl  get svc -n  '
+alias kkgss=' kubectl get svc kube-dns  -n kube-system   '
+alias kkgsss=' kubectl  get svc --all-namespaces   '
+
 
 alias kkI=' curl -sfL https://get.k3s.io | sh -   '
 alias kkU=' /usr/local/bin/k3s-uninstall.sh   '
 
-alias kknsw=' nano /etc/fstab        '
-#/swap.img
-alias kksw=' swapoff -a  '
-alias kkf=' free -m '
+alias kkS='  nano /etc/fstab'
+alias kkSS=' swapoff -a  '
 
-alias kkl=' ls -lh /usr/local/bin/k3s  '
-alias kkc=' cat  /etc/rancher/k3s/k3s.yaml  '
+# /swap.img 
 
-alias kkgda=' kubectl get deployment   --all-namespaces   '
+# ........K3S...END....................................
 
-alias kkgpa='  kubectl get pods -o wide  --all-namespaces '
-alias kkgpk=' kubectl get pods -n kube-system   '
-alias kkgpn=' kubectl get pods -n   '
-
-
-
-alias kkgsk=' kubectl get svc kube-dns  -n kube-system   '
-alias kkgsa=' kubectl  get svc --all-namespaces   '
-alias kkgsn=' kubectl  get svc -n  '
-
-alias kka='  kubectl apply -f  '
-
-
-# ........K3S...END......
-#........NETWORK....................................
+# ........NETWORK....................................
 
 alias nt='apt install -y net-tools && apt install openssh-client && apt install openssh-server  && apt install  xclip  && apt install ncdu   && apt install  iputils-ping  && apt install inetutils-traceroute
   && apt install iproute2  && apt install curl && apt install telnet && apt install  dnsutils '
@@ -102,7 +102,8 @@ alias ntt=' apt install   nano '
 
 
 #............NETWORK.....END.....
-#.......SSH..........................
+
+#.......SSH.................................
 
 
 alias sshg=' ssh-keygen -t ed25519 '
@@ -172,4 +173,3 @@ pnpm i -D @vitejs/plugin-react;
 pnpm i -D typescript @types/react @types/react-dom @types/node  vite-tsconfig-paths @vitejs/plugin-react '
 
 #...............................................................
-
