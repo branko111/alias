@@ -90,6 +90,7 @@ alias kks='kubectl  get svc -n  '
 alias kkss='kubectl get svc kube-dns  -n kube-system   '
 alias kksss='kubectl  get svc --all-namespaces   '
 
+alias kkt='sudo cat /var/lib/rancher/k3s/server/node-token   '
 
 alias kkS='nano /etc/fstab'
 alias kkSS='swapoff -a  '
