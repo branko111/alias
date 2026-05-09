@@ -76,15 +76,19 @@ alias kka=' kubectl apply -f  '
 alias kkl='ls -lh /usr/local/bin/k3s  '
 alias kky='cat  /etc/rancher/k3s/k3s.yaml  '
 
-alias kkgd='kubectl get deployment   --all-namespaces   '
+alias kka=' kubectl apply -f  '
+alias kkl='ls -lh /usr/local/bin/k3s  '
+alias kky='cat  /etc/rancher/k3s/k3s.yaml  '
 
-alias kkgp='kubectl get pods -n   '
-alias kkgpp='kubectl get pods -n kube-system   '
-alias kkgppp='kubectl get pods -o wide  --all-namespaces '
+alias kkd='kubectl get deployment   --all-namespaces   '
 
-alias kkgs='kubectl  get svc -n  '
-alias kkgss='kubectl get svc kube-dns  -n kube-system   '
-alias kkgsss='kubectl  get svc --all-namespaces   '
+alias kkp='kubectl get pods -n   '
+alias kkpp='kubectl get pods -n kube-system   '
+alias kkppp='kubectl get pods -o wide  --all-namespaces '
+
+alias kks='kubectl  get svc -n  '
+alias kkss='kubectl get svc kube-dns  -n kube-system   '
+alias kksss='kubectl  get svc --all-namespaces   '
 
 
 alias kkS='nano /etc/fstab'
