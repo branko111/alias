@@ -173,3 +173,10 @@ pnpm i -D @vitejs/plugin-react;
 pnpm i -D typescript @types/react @types/react-dom @types/node  vite-tsconfig-paths @vitejs/plugin-react '
 
 #...............................................................
+
+
+#  k create secret generic tullel-credentials --from-file=..
+#  k edit svc traefik -n k-s
+#  k apply -f  .yml
+#  kg svc trefik -n k-s
+
