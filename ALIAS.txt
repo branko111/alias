@@ -13,7 +13,7 @@ alias ccc='cd ~'
 alias mf=' free -m '
 
 
-#.......DOCKER.........................................
+# .......DOCKER.........................................
 
 alias dd=' docker compose '
 
@@ -51,8 +51,9 @@ alias dI='sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buil
 alias dU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
 sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin'
 
-#.......DOCKER...........END...
-#...NGINX...................................
+# .......DOCKER...........END........................
+
+# .......NGINX...............................................
 
 
 alias na='cd /etc/nginx/sites-available '
@@ -64,7 +65,7 @@ alias nxps='  ps aux | grep nginx  '
 alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remove nginx nginx-common nginx-core -y && apt autoremove -y'
 
 
-#.........NGINX....END...............................
+# ............NGINX....END...........................
 
 #.............K3S...........................................
 
@@ -101,9 +102,9 @@ alias nt='apt install -y net-tools && apt install openssh-client && apt install 
 alias ntt=' apt install   nano '
 
 
-#............NETWORK.....END.....
+# ............NETWORK.....END.....
 
-#.......SSH.................................
+# ............SSH.............................
 
 
 alias sshg=' ssh-keygen -t ed25519 '
@@ -117,9 +118,9 @@ alias sshg=' ssh-keygen -t ed25519 '
 # syscetctl reload ssh.service
 # ssh -o PubkeyAuthentication=no  root@65.109.174.213
 
-#.......SSH.........END.......
+# .......SSH.........END.......
 
-#..SYSTEMCTL..................
+#........SYSTEMCTL..................
 
 
 alias sd='sudo systemctl disable'
@@ -131,9 +132,9 @@ alias sS='sudo systemctl stop '
 
 alias sR='systemctl --type=service --state=running | less'
 
-#..................SYSTEMCTL....END.
+# ..............SYSTEMCTL....END....................
 
-#......................TZ...........UU + UFW.....
+# ...............TZ...........UU + UFW + PNPM.....
 
 
 alias tz='sudo timedatectl set-timezone Australia/Sydney'
@@ -172,11 +173,4 @@ pnpm i -D @vitejs/plugin-react;
 
 pnpm i -D typescript @types/react @types/react-dom @types/node  vite-tsconfig-paths @vitejs/plugin-react '
 
-#...............................................................
-
-
-#  k create secret generic tullel-credentials --from-file=..
-#  k edit svc traefik -n k-s
-#  k apply -f  .yml
-#  kg svc trefik -n k-s
-
+# ...............................................................
