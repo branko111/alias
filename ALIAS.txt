@@ -51,6 +51,9 @@ alias dI='sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buil
 alias dU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli docker-compose-plugin
 sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce docker-compose-plugin'
 
+alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli && sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce && sudo rm -rf /var/lib/docker /etc/docker /var/run/docker.sock && sudo groupdel docker && rm -rf ~/.docker'
+
+
 # .......DOCKER...........END........................
 
 # .......NGINX...............................................
@@ -67,30 +70,35 @@ alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remo
 
 # ............NGINX....END...........................
 
-#.............K3S...........................................
+# .............K3S...........................................
 
-alias kka='  kubectl apply -f  '
-alias kkl=' ls -lh /usr/local/bin/k3s  '
-alias kky=' cat  /etc/rancher/k3s/k3s.yaml  '
+alias kka=' kubectl apply -f  '
+alias kkl='ls -lh /usr/local/bin/k3s  '
+alias kky='cat  /etc/rancher/k3s/k3s.yaml  '
 
-alias kkgd=' kubectl get deployment   --all-namespaces   '
+alias kkgd='kubectl get deployment   --all-namespaces   '
 
-alias kkgp=' kubectl get pods -n   '
-alias kkgpp=' kubectl get pods -n kube-system   '
-alias kkgppp='  kubectl get pods -o wide  --all-namespaces '
+alias kkgp='kubectl get pods -n   '
+alias kkgpp='kubectl get pods -n kube-system   '
+alias kkgppp='kubectl get pods -o wide  --all-namespaces '
 
-alias kkgs=' kubectl  get svc -n  '
-alias kkgss=' kubectl get svc kube-dns  -n kube-system   '
-alias kkgsss=' kubectl  get svc --all-namespaces   '
+alias kkgs='kubectl  get svc -n  '
+alias kkgss='kubectl get svc kube-dns  -n kube-system   '
+alias kkgsss='kubectl  get svc --all-namespaces   '
 
 
-alias kkI=' curl -sfL https://get.k3s.io | sh -   '
-alias kkU=' /usr/local/bin/k3s-uninstall.sh   '
-
-alias kkS='  nano /etc/fstab'
-alias kkSS=' swapoff -a  '
+alias kkS='nano /etc/fstab'
+alias kkSS='swapoff -a  '
 
 # /swap.img 
+
+
+alias kkI='curl -sfL https://get.k3s.io | sh -   '
+
+alias kkU='/usr/local/bin/k3s-uninstall.sh  ~  '
+
+alias kkUU='/usr/local/bin/k3s-agent-uninstall.sh ~ 	'
+
 
 # ........K3S...END....................................
 
