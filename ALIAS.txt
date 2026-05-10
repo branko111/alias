@@ -189,4 +189,6 @@ pnpm i -D @vitejs/plugin-react;
 
 pnpm i -D typescript @types/react @types/react-dom @types/node  vite-tsconfig-paths @vitejs/plugin-react '
 
-# ...............................................................
+#W ...............................................................
+
+##
