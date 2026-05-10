@@ -73,6 +73,18 @@ alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remo
 
 # ............NGINX....END...........................
 
+# .............HELM...........................................
+
+
+alias hht='helm repo add traefik https://traefik.github.io/charts  '
+
+alias hhtt='helm install traefik traefik/traefik  '
+
+alias hhu='helm repo update  '
+
+
+# ............HELM....END...........................
+
 # .............K3S...........................................
 
 alias kka=' kubectl apply -f  '
@@ -103,9 +115,13 @@ alias kkSS='swapoff -a  '
 
 alias kkI='curl -sfL https://get.k3s.io | sh -   '
 
+alias kkt='cat /var/lib/rancher/k3s/server/node-token  '
+
 alias kkU='/usr/local/bin/k3s-uninstall.sh  ~  '
 
 alias kkUU='/usr/local/bin/k3s-agent-uninstall.sh ~ 	'
+
+##  curl -sfL https://get.k3s.io | K3S_URL=https://:6443 K3S_TOKEN=   sh -
 
 
 # ........K3S...END....................................
@@ -189,6 +205,4 @@ pnpm i -D @vitejs/plugin-react;
 
 pnpm i -D typescript @types/react @types/react-dom @types/node  vite-tsconfig-paths @vitejs/plugin-react '
 
-#W ...............................................................
-
-##
+## ...............................................................
