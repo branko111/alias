@@ -2,6 +2,9 @@ alias an='sudo nano ~/.bash_aliases'
 
 alias ac='sudo cat ~/.bash_aliases'
 
+alias acR='sudo rm ~/.bash_aliases'
+
+
 alias aw='cd /var/www/'
 
 alias b='bash'
