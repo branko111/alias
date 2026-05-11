@@ -76,11 +76,11 @@ alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remo
 # .............HELM...........................................
 
 
-alias hht='helm repo add traefik https://traefik.github.io/charts  '
+alias hht='sudo helm repo add traefik https://traefik.github.io/charts  '
 
-alias hhtt='helm install traefik traefik/traefik  '
+alias hhtt='sudo helm install traefik traefik/traefik  '
 
-alias hhu='helm repo update  '
+alias hhu='sudo helm repo update  '
 
 
 # ............HELM....END...........................
@@ -88,10 +88,12 @@ alias hhu='helm repo update  '
 # .............K3S...........................................
 
 alias kka=' sudo kubectl apply -f  '
-alias kkl=sudo 'ls -lh /usr/local/bin/k3s  '
+# ....alias kkl=sudo 'ls -lh /usr/local/bin/k3s  '
 alias kky='sudo cat  /etc/rancher/k3s/k3s.yaml  '
 
 alias kkd='sudo kubectl get deployment   --all-namespaces   '
+
+alias kkn='sudo kubectl get nodes   '
 
 alias kkp='sudo kubectl get pods -n   '
 alias kkpp='sudo kubectl get pods -n kube-system   '
@@ -127,25 +129,25 @@ alias kkSS='sudo swapoff -a  '
 # /swap.img
 
 
-alias kkI='curl -sfL https://get.k3s.io | sh -   '
+alias kkI='sudo curl -sfL https://get.k3s.io | sh -   '
 
-alias kkt='cat /var/lib/rancher/k3s/server/node-token  '
+alias kkt='sudo cat /var/lib/rancher/k3s/server/node-token  '
 
-alias kkU='/usr/local/bin/k3s-uninstall.sh  ~  '
+alias kkU='sudo /usr/local/bin/k3s-uninstall.sh  ~  '
 
-alias kkUU='/usr/local/bin/k3s-agent-uninstall.sh ~     '
+alias kkUU='sudo /usr/local/bin/k3s-agent-uninstall.sh ~     '
 
-##  curl -sfL https://get.k3s.io | K3S_URL=https://z:6443 K3S_TOKEN=   sh -
+##  curl -sfL https://get.k3s.io | K3S_URL=https://z:6443 K3S_TOKEN=K10395930dbbbcd40a1179897d15940f35d8ec307693acbe9a2248fa23c6dfacbf6::server:b77d2e1a144264fdf6f2db2235219723   sh -
 
 
 # ........K3S...END....................................
 
 # ........NETWORK....................................
 
-alias nt='apt install -y net-tools && apt install openssh-client && apt install openssh-server  && apt install  xclip  && apt install ncdu   && apt install  iputils-ping  && apt install inetutils-traceroute
+alias nt='sudo apt install -y net-tools && apt install openssh-client && apt install openssh-server  && apt install  xclip  && apt install ncdu   && apt install  iputils-ping  && apt install inetutils-traceroute
   && apt install iproute2  && apt install curl && apt install telnet && apt install  dnsutils '
 
-alias ntt=' apt install   nano '
+alias ntt='sudo  apt install   nano '
 
 
 # ............NETWORK.....END.....
@@ -153,7 +155,7 @@ alias ntt=' apt install   nano '
 # ............SSH.............................
 
 
-alias sshg=' ssh-keygen -t ed25519 '
+alias sshg='sudo  ssh-keygen -t ed25519 '
 
 # ssh -i .ssh/coolify root@65.109.174.213
 # coolify
@@ -176,7 +178,7 @@ alias srr='sudo systemctl restart '
 alias ss='sudo systemctl status '
 alias sS='sudo systemctl stop '
 
-alias sR='systemctl --type=service --state=running | less'
+alias sR='sudo systemctl --type=service --state=running | less'
 
 # ..............SYSTEMCTL....END....................
 
@@ -189,9 +191,9 @@ alias tz='sudo timedatectl set-timezone Australia/Sydney'
 alias u='sudo apt update -y'
 alias uu='sudo apt update && sudo apt upgrade -y'
 
-alias ufe='ufw enable '
-alias ufs='ufw status'
-alias ufl='ufw app list'
+alias ufe='sudo ufw enable '
+alias ufs='sudo ufw status'
+alias ufl='sudo ufw app list'
 
 alias uf1='sudo ufw allow from 192.168.1.0/24'
 
@@ -206,7 +208,7 @@ alias ufDS='sudo ufw disable'
 alias ufRS='sudo ufw reset'
 
 
-alias tsI='
+alias tsI='sudo 
 apt install npm -y
 &&
 npm install -g pnpm
