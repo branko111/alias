@@ -87,30 +87,44 @@ alias hhu='helm repo update  '
 
 # .............K3S...........................................
 
-alias kka=' kubectl apply -f  '
-alias kkl='ls -lh /usr/local/bin/k3s  '
-alias kky='cat  /etc/rancher/k3s/k3s.yaml  '
+alias kka=' sudo kubectl apply -f  '
+alias kkl=sudo 'ls -lh /usr/local/bin/k3s  '
+alias kky='sudo cat  /etc/rancher/k3s/k3s.yaml  '
 
-alias kka=' kubectl apply -f  '
-alias kkl='ls -lh /usr/local/bin/k3s  '
-alias kky='cat  /etc/rancher/k3s/k3s.yaml  '
+alias kkd='sudo kubectl get deployment   --all-namespaces   '
 
-alias kkd='kubectl get deployment   --all-namespaces   '
+alias kkp='sudo kubectl get pods -n   '
+alias kkpp='sudo kubectl get pods -n kube-system   '
+alias kkppp='sudo kubectl get pods -o wide  --all-namespaces '
 
-alias kkp='kubectl get pods -n   '
-alias kkpp='kubectl get pods -n kube-system   '
-alias kkppp='kubectl get pods -o wide  --all-namespaces '
-
-alias kks='kubectl  get svc -n  '
-alias kkss='kubectl get svc kube-dns  -n kube-system   '
-alias kksss='kubectl  get svc --all-namespaces   '
+alias kks='sudo kubectl  get svc -n  '
+alias kkss='sudo kubectl get svc kube-dns  -n kube-system   '
+alias kksss='sudo kubectl  get svc --all-namespaces   '
 
 alias kkt='sudo cat /var/lib/rancher/k3s/server/node-token   '
 
-alias kkS='nano /etc/fstab'
-alias kkSS='swapoff -a  '
+alias kkua='sudo ufw allow 22/tcp                # SSH
+sudo ufw allow 8472/udp              # Flannel VXLAN
+sudo ufw allow 10250/tcp             # Kubelet metrics
+sudo ufw allow 30000:32767/tcp       # NodePort TCP
+sudo ufw allow 30000:32767/udp       # NodePort UDP
+sudo ufw enable  -y '
 
-# /swap.img 
+alias kkum='sudo ufw allow 22/tcp                # SSH
+sudo ufw allow 6443/tcp              # K3s API Server
+sudo ufw allow 8472/udp              # Flannel VXLAN
+sudo ufw allow 10250/tcp             # Kubelet metrics
+sudo ufw allow 2379:2380/tcp         # etcd (for HA)
+sudo ufw allow 30000:32767/tcp       # NodePort TCP
+sudo ufw allow 30000:32767/udp       # NodePort UDP
+sudo ufw enable -y   '
+
+
+alias kkS='sudo nano /etc/fstab'
+alias kkSS='sudo swapoff -a  '
+
+
+# /swap.img
 
 
 alias kkI='curl -sfL https://get.k3s.io | sh -   '
@@ -119,9 +133,9 @@ alias kkt='cat /var/lib/rancher/k3s/server/node-token  '
 
 alias kkU='/usr/local/bin/k3s-uninstall.sh  ~  '
 
-alias kkUU='/usr/local/bin/k3s-agent-uninstall.sh ~ 	'
+alias kkUU='/usr/local/bin/k3s-agent-uninstall.sh ~     '
 
-##  curl -sfL https://get.k3s.io | K3S_URL=https://:6443 K3S_TOKEN=   sh -
+##  curl -sfL https://get.k3s.io | K3S_URL=https://z:6443 K3S_TOKEN=   sh -
 
 
 # ........K3S...END....................................
@@ -142,7 +156,7 @@ alias ntt=' apt install   nano '
 alias sshg=' ssh-keygen -t ed25519 '
 
 # ssh -i .ssh/coolify root@65.109.174.213
-# coolify 
+# coolify
 # ls coolify  |  cat ...c
 # Not-default 20%-$ back-up 1/day
 # sshNot-default 20%-$ back-up 1/day
@@ -195,7 +209,7 @@ alias ufRS='sudo ufw reset'
 alias tsI='
 apt install npm -y
 &&
-npm install -g pnpm 
+npm install -g pnpm
 &&
 pnpm i @tanstack/react-start @tanstack/react-router vite
 &&
