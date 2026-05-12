@@ -137,7 +137,12 @@ alias kkU='sudo /usr/local/bin/k3s-uninstall.sh  ~  '
 
 alias kkUU='sudo /usr/local/bin/k3s-agent-uninstall.sh ~     '
 
-##  curl -sfL https://get.k3s.io | K3S_URL=https://z:6443 K3S_TOKEN=K10395930dbbbcd40a1179897d15940f35d8ec307693acbe9a2248fa23c6dfacbf6::server:b77d2e1a144264fdf6f2db2235219723   sh -
+
+#.... curl -sfL https://get.k3s.io | K3S_TOKEN=SECRET sh -s - server --cluster-init --cluster-cidr=10.244.0.0/16 --service-cidr=10.96.0.0/16 --disable=servicelb --disable-network-policy --disable=traefik
+
+
+#.... curl -sfL https://get.k3s.io | K3S_URL=https://192.168.1.121:6443 K3S_TOKEN=SECRET sh -s - server --cluster-cidr=10.244.0.0/16 --service-cidr=10.96.0.0/16 --disable=servicelb --disable-network-policy --disable=traefik
+
 
 
 # ........K3S...END....................................
