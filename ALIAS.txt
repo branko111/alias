@@ -109,8 +109,7 @@ alias kkua='sudo ufw allow 22/tcp                # SSH
 sudo ufw allow 8472/udp              # Flannel VXLAN
 sudo ufw allow 10250/tcp             # Kubelet metrics
 sudo ufw allow 30000:32767/tcp       # NodePort TCP
-sudo ufw allow 30000:32767/udp       # NodePort UDP
-sudo ufw enable  -y '
+sudo ufw allow 30000:32767/udp       # NodePort UDP '
 
 alias kkum='sudo ufw allow 22/tcp                # SSH
 sudo ufw allow 6443/tcp              # K3s API Server
@@ -143,8 +142,14 @@ alias kkUU='sudo /usr/local/bin/k3s-agent-uninstall.sh ~     '
 
 #.... curl -sfL https://get.k3s.io | K3S_URL=https://192.168.1.121:6443 K3S_TOKEN=SECRET sh -s - server --cluster-cidr=10.244.0.0/16 --service-cidr=10.96.0.0/16 --disable=servicelb --disable-network-policy --disable=traefik
 
-
-
+#....  sudo mkdir -p ~/.kube
+#.... sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+#.... sudo chown $USER:$USER ~/.kube/config
+#.... sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+#.... sudo chmod 644  ~/.kube/config
+#.... sudo chown $(id -u):$(id -g) $HOME/.kube/config
+#....
+#....
 # ........K3S...END....................................
 
 # ........NETWORK....................................
@@ -196,14 +201,13 @@ alias tz='sudo timedatectl set-timezone Australia/Sydney'
 alias u='sudo apt update -y'
 alias uu='sudo apt update && sudo apt upgrade -y'
 
-alias ufe='sudo ufw enable '
+alias ufe='sudo ufw enable c
+'
 alias ufs='sudo ufw status'
 alias ufl='sudo ufw app list'
 
 alias uf1='sudo ufw allow from 192.168.1.0/24'
 
-alias ufap='sudo ufw allow "Apache Full" '
-alias ufnx='sudo ufw allow "Nginx Full" '
 alias ufop='sudo ufw allow OpenSSH'
 
 alias ufDN='sudo ufw deny'
