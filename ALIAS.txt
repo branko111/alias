@@ -91,6 +91,7 @@ alias kka=' sudo kubectl apply -f  '
 # ....alias kkl=sudo 'ls -lh /usr/local/bin/k3s  '
 
 alias kkd='sudo kubectl get deployment   --all-namespaces   '
+alias kkdd='sudo kubectl describe node    '
 
 alias kkn='sudo kubectl get nodes   '
 alias kknn='sudo k3s kubectl get namespaces   '
