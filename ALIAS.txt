@@ -67,6 +67,8 @@ alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker
 
 alias ni='sudo apt install nginx -y '
 
+alias nm=' sudo mv index.html  index.nginx-debian.html '
+
 alias na='cd /etc/nginx/sites-available '
 alias ne='cd /etc/nginx/sites-enabled '
 alias nee='cd /etc/nginx/ '
