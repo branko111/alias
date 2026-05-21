@@ -98,7 +98,7 @@ alias kki='sudo curl -sfL https://get.k3s.io | sh - '
 alias kkn='sudo kubectl get nodes   '
 alias kknn='sudo k3s kubectl get namespaces   '
 
-alias kkm='sudo cd /var/lib/rancher/k3s/server/manifests   '
+alias kkm='cd /var/lib/rancher/k3s/server/manifests   '
 
 alias kkp='sudo kubectl get pods -n   '
 alias kkpp='sudo kubectl get pods -n kube-system   '
