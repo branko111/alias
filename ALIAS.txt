@@ -202,8 +202,7 @@ alias sr='sudo systemctl reload '
 alias srr='sudo systemctl restart '
 alias ss='sudo systemctl status '
 alias sss='sudo systemctl start '
-
-alias sS='sudo systemctl stop '
+alias ssss='sudo systemctl stop '
 
 alias sR='sudo systemctl --type=service --state=running | less'
 
