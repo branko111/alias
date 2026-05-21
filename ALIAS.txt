@@ -65,10 +65,14 @@ alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker
 
 # .......NGINX...............................................
 
+alias ni='sudo apt install nginx -y '
 
 alias na='cd /etc/nginx/sites-available '
 alias ne='cd /etc/nginx/sites-enabled '
 alias nee='cd /etc/nginx/ '
+
+alias nr='sudo systemctl reload nginx '
+alias nt=' sudo nginx -t '
 
 alias nxps='  ps aux | grep nginx  '
 
@@ -197,6 +201,8 @@ alias se='sudo systemctl enable '
 alias sr='sudo systemctl reload '
 alias srr='sudo systemctl restart '
 alias ss='sudo systemctl status '
+alias sss='sudo systemctl start '
+
 alias sS='sudo systemctl stop '
 
 alias sR='sudo systemctl --type=service --state=running | less'
@@ -217,8 +223,7 @@ alias uu='sudo apt update && sudo apt upgrade -y'
 alias ufe=' sudo ufw enable  '
 alias ufs=' sudo ufw status  '
 alias ufv=' sudo ufw status verbose  '
-alias ufn='  sudo ufw allow OpenSSH && sudo ufw allow 'Nginx Full' && sudo ufw enable   '
-alias ufop='sudo ufw allow OpenSSH'
+alias ufo='  sudo ufw allow OpenSSH  '
 
 alias ufDN='sudo ufw deny'
 alias ufDL='sudo ufw delete'
