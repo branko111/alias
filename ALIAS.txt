@@ -61,7 +61,7 @@ sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce dock
 
 alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli && sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce && sudo rm -rf /var/lib/docker /etc/docker /var/run/docker.sock && sudo groupdel docker && rm -rf ~/.docker'
 
-# .......DOCKER...........END........................
+# .......DOCKER...........END................................
 
 # .......NGINX...............................................
 
@@ -71,12 +71,23 @@ alias ni='sudo apt install nginx -y '
 
 alias nl=' sudo ln -s /etc/nginx/sites-available/$s /etc/nginx/sites-enabled/ '
 
+
 alias na='cd /etc/nginx/sites-available '
 alias na='cd /etc/nginx/sites-available '
 alias nc='clone_site.sh ' 
 alias ne='cd /etc/nginx/sites-enabled '
 
 alias nr='sudo systemctl reload nginx '
+alias ns='for d in bets.s111.com
+chat.s111.com
+food.s111.com
+jobs.s111.com
+love.s111.com
+ride.s111.com
+stay.s111.com
+teen.s111.com
+vote.s111.com; do mkdir -p "$d" && echo "$d" > "$d/index.html"; done   '
+
 alias nt=' sudo nginx -t '
 
 alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remove nginx nginx-common nginx-core -y && apt autoremove -y'
