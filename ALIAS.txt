@@ -99,6 +99,7 @@ alias hhu='sudo helm repo update  '
 # .............K3S...........................................
 
 alias kka=' sudo kubectl apply -f  '
+
 # ....alias kkl=sudo 'ls -lh /usr/local/bin/k3s  '
 
 alias kkd='sudo kubectl get deployment   --all-namespaces   '
@@ -123,28 +124,10 @@ alias kkt='sudo cat /var/lib/rancher/k3s/server/node-token   '
 
 alias kky='sudo cat  /etc/rancher/k3s/k3s.yaml  '
 
-alias kkua='sudo ufw allow 22/tcp                # SSH
-sudo ufw allow 8472/udp              # Flannel VXLAN
-sudo ufw allow 10250/tcp             # Kubelet metrics
-sudo ufw allow 30000:32767/tcp       # NodePort TCP
-sudo ufw allow 30000:32767/udp       # NodePort UDP '
-
-alias kkum='sudo ufw allow 22/tcp                # SSH
-sudo ufw allow 6443/tcp              # K3s API Server
-sudo ufw allow 8472/udp              # Flannel VXLAN
-sudo ufw allow 10250/tcp             # Kubelet metrics
-sudo ufw allow 2379:2380/tcp         # etcd (for HA)
-sudo ufw allow 30000:32767/tcp       # NodePort TCP
-sudo ufw allow 30000:32767/udp       # NodePort UDP
-sudo ufw enable -y   '
-
-
 alias kkS='sudo nano /etc/fstab'
 alias kkSS='sudo swapoff -a  '
 
-
 # /swap.img
-
 
 alias kkI='sudo curl -sfL https://get.k3s.io | sh -   '
 
@@ -219,7 +202,10 @@ alias tz='sudo timedatectl set-timezone Australia/Sydney'
 alias u='sudo apt update -y'
 alias uu='sudo apt update && sudo apt upgrade -y'
 
-# ...
+# ... UFW ......................................
+
+
+alias uf=' for p in 22 80 443 22/tcp 22/udp 6443/tcp 8472/udp  2379:2380/tcp 10250/tcp  30000:32767/tcp 30000:32767/udp;  do sudo ufw allow $p/tcp; done '
 
 alias ufe=' sudo ufw enable  '
 alias ufs=' sudo ufw status  '
@@ -231,7 +217,7 @@ alias ufDL='sudo ufw delete'
 alias ufDS='sudo ufw disable'
 alias ufRS='sudo ufw reset'
 
-# ...
+# ... UFW.. END .........................................
 
 alias tsI='sudo 
 apt install npm -y
