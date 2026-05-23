@@ -172,11 +172,10 @@ alias kkUU='sudo /usr/local/bin/k3s-agent-uninstall.sh ~     '
 
 # ........NETWORK....................................
 
-alias nt='sudo apt install -y net-tools && apt install openssh-client && apt install openssh-server  && apt install  xclip  && apt install ncdu   && apt install  iputils-ping  && apt install inetutils-traceroute
+alias nnl='sudo netstat -tulpn | grep LISTEN '
+
+alias nnI='sudo apt install -y net-tools && apt install openssh-client && apt install openssh-server  && apt install  xclip  && apt install ncdu   && apt install  iputils-ping  && apt install inetutils-traceroute
   && apt install iproute2  && apt install curl && apt install telnet && apt install  dnsutils '
-
-alias ntt='sudo  apt install   nano '
-
 
 # ............NETWORK.....END.....
 
