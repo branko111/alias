@@ -73,7 +73,7 @@ alias ni='sudo apt install nginx -y '
 
 # ... s="s" .. echo $s
 
-alias nl=' sudo ln -s /etc/nginx/sites-available/$s /etc/nginx/sites-enabled/ '
+alias nl=' sudo ln -s /etc/nginx/sites-available/$z /etc/nginx/sites-enabled/ '
 
 
 alias na='cd /etc/nginx/sites-available '
