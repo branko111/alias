@@ -20,6 +20,9 @@ alias cbi=' sudo apt install certbot python3-certbot-nginx '
 alias cbl=' sudo ln -s /snap/bin/certbot /usr/bin/certbot '
 
 # ... z="s111.com"    echo $z
+# ... alias nl=' sudo ln -s /etc/nginx/sites-available/$z /etc/nginx/sites-enabled/ '
+# ... nginx -t  ssss nginx  sss nginx 
+
 
 alias cbc=' sudo certbot --nginx -d $z  '
 
