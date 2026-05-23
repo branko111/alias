@@ -74,6 +74,8 @@ alias nm=' sudo mv index.html  index.nginx-debian.html '
 alias nl=' sudo ln -s /etc/nginx/sites-available/$s /etc/nginx/sites-enabled/ '
 
 alias na='cd /etc/nginx/sites-available '
+alias na='cd /etc/nginx/sites-available '
+alias nc='/usr/local/bin/clone_site.sh ' 
 alias ne='cd /etc/nginx/sites-enabled '
 alias nee='cd /etc/nginx/ '
 
