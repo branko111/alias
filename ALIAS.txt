@@ -13,7 +13,7 @@ alias c='clear'
 alias cc='cd ..'
 alias ccc='cd ~'
 
-# ...
+# ... SSL ......................................
 
 alias cbR=' sudo apt-get remove certbot  '
 alias cbi=' sudo apt install certbot python3-certbot-nginx '
@@ -23,7 +23,8 @@ alias cbl=' sudo ln -s /snap/bin/certbot /usr/bin/certbot '
 
 alias cbc=' sudo certbot --nginx -d $z  '
 
-# ...
+# ... SSL   END ....................................
+
 # .......DOCKER.........................................
 
 alias dd=' docker compose '
@@ -78,15 +79,11 @@ alias nc='clone_site.sh '
 alias ne='cd /etc/nginx/sites-enabled '
 
 alias nr='sudo systemctl reload nginx '
-alias ns='for d in bets.s111.com
-chat.s111.com
-food.s111.com
-jobs.s111.com
-love.s111.com
-ride.s111.com
-stay.s111.com
-teen.s111.com
-vote.s111.com; do mkdir -p "$d" && echo "$d" > "$d/index.html"; done   '
+
+# ... cd /var/www/
+
+alias nw='for d in s111.com bets.s111.com chat.s111.com food.s111.com jobs.s111.com love.s111.com ride.s111.com stay.s111.com teen.s111.com vote.s111.com; do mkdir -p "$d" && echo "$d" > "$d/index.html"; done
+   '
 
 alias nt=' sudo nginx -t '
 
