@@ -67,8 +67,6 @@ alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker
 
 alias ni='sudo apt install nginx -y '
 
-alias nm=' sudo mv index.html  index.nginx-debian.html '
-
 # ... s="s" .. echo $s
 
 alias nl=' sudo ln -s /etc/nginx/sites-available/$s /etc/nginx/sites-enabled/ '
@@ -77,12 +75,9 @@ alias na='cd /etc/nginx/sites-available '
 alias na='cd /etc/nginx/sites-available '
 alias nc='clone_site.sh ' 
 alias ne='cd /etc/nginx/sites-enabled '
-alias nee='cd /etc/nginx/ '
 
 alias nr='sudo systemctl reload nginx '
 alias nt=' sudo nginx -t '
-
-alias nxps='  ps aux | grep nginx  '
 
 alias nxR=' ssss nginx && apt purge nginx nginx-common nginx-core -y && apt remove nginx nginx-common nginx-core -y && apt autoremove -y'
 
