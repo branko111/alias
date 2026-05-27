@@ -87,16 +87,20 @@ alias kka=' sudo kubectl apply -f  '
 alias kkdsnd='sudo kubectl describe node    '
 alias kkdsns='sudo kubectl describe namespace    '
 alias kkdspd='sudo kubectl describe pod    '
+alias kkdssv='sudo kubectl describe sv    '
+
 
 alias kkgnd='sudo kubectl get nodes   '
 alias kkgns='sudo kubectl get namespaces   '
 
 alias kkDns=' sudo kubectl delete namespace '
-alias kkgd='sudo kubectl get deployment -n   '
-alias kkgp='sudo kubectl get pods -n   '
-alias kkgs='sudo kubectl  get svc -n  '
+
+alias kkgdp='sudo kubectl get deployment -n   '
+alias kkgpd='sudo kubectl get pods -n   '
+alias kkgsv='sudo kubectl  get svc -n  '
 
 alias kki='sudo curl -sfL https://get.k3s.io | sh - '
+
 
 alias kkm='cd /var/lib/rancher/k3s/server/manifests   '
 
