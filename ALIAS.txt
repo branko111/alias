@@ -84,11 +84,11 @@ alias hhu='sudo helm repo update  '
 
 alias kka=' sudo kubectl apply -f  '
 
-alias kkdn='sudo kubectl describe node    '
-alias kkdnn='sudo kubectl describe namespace    '
-alias kkdp='sudo kubectl describe pod    '
+alias kkdsnd='sudo kubectl describe node    '
+alias kkdsns='sudo kubectl describe namespace    '
+alias kkdspd='sudo kubectl describe pod    '
 
-alias kkgn='sudo kubectl get nodes   '
+alias kkgnd='sudo kubectl get nodes   '
 alias kkgns='sudo kubectl get namespaces   '
 
 alias kkDns=' sudo kubectl delete namespace '
