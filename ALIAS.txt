@@ -86,6 +86,7 @@ alias kka=' sudo kubectl apply -f  '
 
 alias kkapi=' sudo k3s kubectl api-resources '
 
+
 alias kkcns=' sudo kubectl create namespace   '
 alias kkDns=' sudo kubectl delete namespace   '
 
@@ -105,7 +106,7 @@ alias kkgpd='sudo kubectl get pods -n   '
 alias kkgsv='sudo kubectl  get svc -n  '
 
 alias kki='sudo curl -sfL https://get.k3s.io | sh - '
-
+alias kkii=' curl -sfL https://get.k3s.io | K3S_URL=https://$a:6443 K3S_TOKEN=$b sh - '
 
 alias kkm='cd /var/lib/rancher/k3s/server/manifests   '
 
