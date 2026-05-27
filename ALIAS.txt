@@ -88,13 +88,13 @@ alias kkdn='sudo kubectl describe node    '
 alias kkdnn='sudo kubectl describe namespace    '
 alias kkdp='sudo kubectl describe pod    '
 
-alias kkgd='sudo kubectl get deployment -n   '
 alias kkgn='sudo kubectl get nodes   '
-alias kkgnn='sudo k3s kubectl get namespaces   '
+alias kkgns='sudo kubectl get namespaces   '
+
+alias kkDns=' sudo kubectl delete namespace '
+alias kkgd='sudo kubectl get deployment -n   '
 alias kkgp='sudo kubectl get pods -n   '
 alias kkgs='sudo kubectl  get svc -n  '
-
-alias kknD=' sudo kubectl delete namespace '
 
 alias kki='sudo curl -sfL https://get.k3s.io | sh - '
 
