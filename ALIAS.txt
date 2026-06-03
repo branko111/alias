@@ -95,8 +95,6 @@ alias hhu='sudo helm repo update  '
 # ............. IP .................................
 
 
-alias iip ='sudo hostname -I  '
-
 
 # ............ IP ...END...........................
 
