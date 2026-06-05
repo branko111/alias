@@ -75,6 +75,9 @@ alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker
 alias gg='  git config --global user.email "branko111@yahoo.com" '
 alias ggg='  git config --global user.name "branko111" '
 
+alias ga='git ac -m "add docker app" '
+alias gp=' git push  '
+
 
 # .......GIT...............END................................
 
