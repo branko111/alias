@@ -97,9 +97,13 @@ alias hhu='sudo helm repo update  '
 
 # ............. IP .................................
 
+#  alias mmi= ' sudo ip -br link show | awk '{print $1, $3}' '
 
+# ............ IP-MAC ...END...........................
 
-# ............ IP ...END...........................
+# 
+
+# ............ IP-MAC ...END...........................
 
 
 # .............K3S...........................................
@@ -222,6 +226,9 @@ alias sshg='sudo  ssh-keygen -t ed25519 '
 # nano /etc/ssh/sshd_config  #PasswordAuthentication no #PermitEmptyPassword no/yes
 # syscetctl reload ssh.service
 # ssh -o PubkeyAuthentication=no  root@65.109.174.213
+# ssh-keygen -t ed25519 -C "branko111@yahoo.com"
+# /home/z/.ssh/git_key
+
 
 # .......SSH.........END.......
 
