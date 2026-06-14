@@ -31,8 +31,8 @@ alias cbc=' sudo certbot --nginx -d $z  '
 
 # .......DOCKER.........................................
 
-alias dd=' docker compose '
-alias dk='docker '
+alias ddl=' docker login -u branko111 '
+alias ddp='dckr_pat_7NfyxfjG8F8yYXR2sa73Gn5Cg64 '
 
 alias dp='docker ps -a'
 
