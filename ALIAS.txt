@@ -66,6 +66,10 @@ sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce dock
 
 alias dUU='sudo apt-get purge -y docker-engine docker docker.io docker-ce docker-ce-cli && sudo apt-get autoremove -y --purge docker-engine docker docker.io docker-ce && sudo rm -rf /var/lib/docker /etc/docker /var/run/docker.sock && sudo groupdel docker && rm -rf ~/.docker'
 
+# Purge all Docker-related packages
+#   apt-get purge -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker.io docker-doc docker-compose
+
+
 # .......DOCKER...........END................................
 
 
